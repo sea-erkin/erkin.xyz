@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Erkin Djindjiev | Technology Enthusiast</title>
+
+    <!-- CSS  -->
+    <link href="assets/min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="assets/min/custom-min.css" type="text/css" rel="stylesheet" >
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#" id="logo-container" class="brand-logo">Erkin Djindjiev</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a target="_blank" href="http://erkin.xyz/blog.html">Blog</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a target="_blank" href="http://erkin.xyz/blog.html">Blog</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>I </span>
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">am a full stack software engineer.</b>
+                <b>am a penetration tester.</b>
+                <b>want to make a difference on this planet with technology.</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+                <h2 class="center header text_h2">I am a twenty something year old with a passion for software development and security. </h2>
+            </div>
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-image-flash-on"></i>
+                    <h5 class="promo-caption">Software Development</h5>
+                    <p class="light center">My passion for software development came at a young age. Building things was fun. From stacking cups, to legos, to making websites, to building fully scalable enterprise applications, there is no feeling more gratifying than building something out of nothing. We are extremely fortunate to live in a time where it seems as though there are no limits to technology. </p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-security"></i>
+                    <h5 class="promo-caption">Security</h5>
+                    <p class="light center">My passion for security came after discovering vulnerabilities in an application I was tasked with re-writing. It was an eye opening experience to know that by slightly modifying my input parameters, I could read any result from the database. This taught me the importance of properly building software and how fragile software can really be.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">Today</h5>
+                    <p class="light center">Today my full-time responsibilites are two-fold. I am a full stack software engineer \ OSCP certified pentester who emphasizes the importance of building software in a secure manner. I believe in security through technical testing. You cannot prove the security of a system or application without a realistic attack.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="assets/img/parallax1.png"></div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Projects </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/img/SafeWalk.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">SafeWalk <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=-He14ZR5CtY">SafeWalk - Youtube</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">SafeWalk <i class="mdi-navigation-close right"></i></span>
+                        <p>SafeWalk is a proof of concept application built for Temple University's Future of Computing competition. Philadelphia is notoriously known for it's high crime rate, especially in the north and around Temple University. Ryan Bradbury and I analyzed crime data obtained from OpenData Philly and created a routing algorithm which accounted for historical crimes. The user could provide a location of where they are, and where they want to walk too and the application would display the shortest path as well as the safest path based on crimes that have occured in the past.</p>
+                        <br/>
+                        <h6>Tech Notes</h6>
+                        <p>We first ranked the severity of the crime data we had acquired. From this ranking we then applied scores to routes or intersections which was a multiplier for distance. Each route has a value, the shortest path will always be the length of that path. For example if you have a road that is 500 ft, that would be the actual distance. For our application, imagine that a large number of crimes had been commit on that road, our application would then see that as 1200 ft and therefore pick a different path that is shorter\safer. The data was processed using a MySQL database with the pgRouting extension. SQL Server was our first database choice but had many limitating factors when it came to storing routes and coordinates. The UI utilized the open street maps framework and was built as a windows application using C#.</p>
+                        <br/>
+                        <h6>Improvement Opportunities</h6>
+                        <p>Work with the city of Philadelphia to make this a fully functioning application that is easy to use. Additionally add custom routes to account for certain crimes. This can also be enhanced to provide insight as to what are the safest areas to park in Philadelphia. Build a RESTful API that can be consumed by any client that can issue HTTP requests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/img/ams.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Temple AMS<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a target="_blank" href="http://www.temple.edu/provost/aaair/accreditation/">Temple University Accreditation</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Temple University Accreditation Management System <i class="mdi-navigation-close right"></i></span>
+                        <p>AMS was built for Temple University's Vice Provost to aid in managing accreditations at Temple University. AMS was built during a year long capstone project in which I acted as the technical lead largely for development and implementation. See link for more details</p>
+                        <br/>
+                        <h6>Tech Notes</h6>
+                        <p>AMS was built on a .NET stack. SQL Server database on an IIS web server with Visual Basic as the server side code. (Not by choice, the majority of the team knew Visual Basic so this is what we went with). We did utilize webforms with a bootstrap template to hide the fact that we were using webforms :) In addition there was some custom JavaScript for a calendar view and drag and drop file upload functionality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/img/BYODSecure.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">BYOD Secure<i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">BYOD Secure <i class="mdi-navigation-close right"></i></span>
+                        <p>BYOD Secure was a proof of concept Android application which allowed a user to use their mobile phone as an additional factor of authentication through NFC. Ryan Bradbury and I worked on BYOD Secure together. The primary use case for the application was to protect the data on a company issued tablet device. The tablet device would remain locked until the user touched their phone to the tablet device. The phone was already paired with the tablet and would therefore unlock the tablet</p>
+                        <br/>
+                        <h6>Tech Notes</h6>
+                        <p>BYOD Secure was built as an Android application using Java. Both the tablet and phone contained a shared secret. When the devices were touched together to trigger NFC, the application on the tablet (could work vice versa) validated the secret and unlocked the tablet. We hit a bunch of roadblocks and went down several rabbit holes because what we were trying to do needed to be done at the system level and I have a bricked Nexus 7 to prove it...</p>
+                        <h6>Improvement Opportunities</h6>
+                        <p>The most valuable use case I saw for this application was an additional layer of security for company specific applications through MDM (Mobile Device Management) Software. Let's imagine I worked at LargeCorp Inc. and we had our own mini app store with applications that had direct links to our internal network, sensitive data and anything else you wouldn't a hacker to get a hold of. Anytime a user with a tablet tries to access a company application through the MDM, they would be prompted to swipe their cell phone as an additional layer of authentication. Therefore, if the tablet device was stolen, access to internal company data is thwarted. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" target="_blank" href="https://www.linkedin.com/in/erkin-djindjiev-65817251">
+                            <i class="small fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" target="_blank" href="https://github.com/sea-erkin/">
+                            <i class="small fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" target="_blank" href="https://twitter.com/SeaErkin/">
+                            <i class="small fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" target="_blank" href="http://erkin.xyz/blog.html">
+                            <i class="small fa fa-comment"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="mailto:seaerkin@gmail.com?Subject=[Erkin.xyz]">
+                            <i class="small fa fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Design Inspired by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>.
+        </div>
+    </div>
+</footer>
+    <!--  Scripts-->
+    <script src="assets/min/plugin-min.js"></script>
+    <script src="assets/min/custom-min.js"></script>
+
+    </body>
+</html>
